@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Park Avenues Hotel - Reserve Your Stay</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#b58a3f",
+                        "background-light": "#f8f8f8",
+                        "background-dark": "#181611",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#1A1A1A] dark:text-[#E0E0E0]">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- TopNavBar Component -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-700 py-3">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<a href="homepage.html">
+<h2 class="text-lg font-bold tracking-[-0.015em] text-[#1A1A1A] dark:text-white">Park Avenues Hotel</h2>
+</a>
+</div>
+<nav class="hidden md:flex flex-1 justify-center gap-9">
+<a class="text-sm font-medium leading-normal text-primary " href="room_selection_and_booking.html">Rooms &amp; Suites</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="dining_and_leisure_options.html">Dining &amp; Leisure</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="meetings_and_events_details.html">Meetings &amp; Events</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="dining_and_leisure_options.html">Spa</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Offers</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Location</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-100 dark:bg-[#393528] text-[#1A1A1A] dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">language</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-100 dark:bg-[#393528] text-[#1A1A1A] dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">payments</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4B1e0BLktnfGtDg2cUQ3MtSFLM6kDUVrEYgPzsFgoYuT0iaSXQy-gWbi7Az-_BB66h8JfoEfW-Wzrh0SiKkyhsFhmEqAFrpPV6snEoIH2wOjmKLDBLTji_1t6lf-3-d8I3g-k8LRqyDtixnEAuA-oE0xdTRzMbPLU3RKQBXLAgDdTUYYxsAP-0dDM6oOhFxPDxFP5vxfzT6Ss2YXHKzuAj_0jq1LRd5g1qZOdTlbNGffM-Z7Dwm3aEAxe-aejFwCFp7CsdpTvscDp");'></div>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-10">
+<div class="flex flex-col gap-8">
+<!-- PageHeading and Breadcrumbs -->
+<div class="space-y-4">
+<div class="flex flex-wrap justify-between gap-3">
+<div class="flex flex-col gap-3">
+<p class="text-4xl font-black tracking-[-0.033em] text-[#1A1A1A] dark:text-white">Reserve Your Stay</p>
+<p class="text-base font-normal leading-normal text-[#4A4A4A] dark:text-[#bab29c]">Select your preferred rooms and suites for your upcoming visit.</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="text-base font-medium leading-normal text-primary">1. Select Room</span>
+<span class="text-base font-medium leading-normal text-[#888888] dark:text-[#bab29c]">/</span>
+<a class="text-base font-medium leading-normal text-[#888888] dark:text-[#bab29c] hover:text-primary dark:hover:text-primary" href="#">2. Guest Details</a>
+<span class="text-base font-medium leading-normal text-[#888888] dark:text-[#bab29c]">/</span>
+<a class="text-base font-medium leading-normal text-[#888888] dark:text-[#bab29c] hover:text-primary dark:hover:text-primary" href="#">3. Payment</a>
+</div>
+</div>
+<!-- Main Section: Two Columns -->
+<div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-8">
+<!-- Left Column: Room Selection -->
+<div class="lg:col-span-2 flex flex-col gap-6">
+<!-- Card 1 -->
+<div class="bg-white dark:bg-[#1C1A16] p-6 rounded-lg border border-gray-200 dark:border-[#393528] flex flex-col sm:flex-row items-stretch justify-between gap-6">
+<div class="w-full sm:w-1/3 bg-center bg-no-repeat aspect-[4/3] sm:aspect-auto bg-cover rounded-lg" data-alt="Elegant hotel suite with a king-sized bed and city view" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnmUS7XGAjenG9JbRJmc_LKeRuTlQ95br1nizI88Q0I1JxHrwjo9fPG_Dc43uVXwOPPoaSa_TY1mabhJMaOTbcOEsy0lIyVspWcAfGwQ9pSOQFM5XKe4OVY7AqvAUsY6ZMT8SUXpuByLuA8Jtwh5gn0qY2oa7XjnYbButbBUZ6L4QOxXLOt4_4rN2uW0UIV0472S1bGIvxeP40HXFKU7rldfe4g5y-7xkq_Qlmz7fBpLnp3PFeUMDrKSqECNZI8H6EC6fjLmOVa1v1");'></div>
+<div class="flex flex-[2_2_0px] flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-sm font-normal leading-normal text-primary">City View</p>
+<p class="text-xl font-bold leading-tight text-[#1A1A1A] dark:text-white">Executive King Suite</p>
+<p class="text-sm font-normal leading-normal text-[#4A4A4A] dark:text-[#bab29c]">Experience unparalleled luxury with a spacious layout and exclusive access to the club lounge.</p>
+<div class="flex items-center gap-4 mt-2 text-[#4A4A4A] dark:text-[#bab29c]">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">aspect_ratio</span><span class="text-xs">600 sq ft</span></div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">king_bed</span><span class="text-xs">1 King Bed</span></div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">group</span><span class="text-xs">Max 3</span></div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-4 mt-auto">
+<p class="text-lg font-bold text-[#1A1A1A] dark:text-white">$450 <span class="text-sm font-normal text-[#888888] dark:text-[#bab29c]">/ night</span></p>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-gray-200 dark:bg-[#393528] text-[#1A1A1A] dark:text-white text-sm font-bold leading-normal">
+<span class="truncate">Select Room</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white dark:bg-[#1C1A16] p-6 rounded-lg border border-gray-200 dark:border-[#393528] flex flex-col sm:flex-row items-stretch justify-between gap-6">
+<div class="w-full sm:w-1/3 bg-center bg-no-repeat aspect-[4/3] sm:aspect-auto bg-cover rounded-lg" data-alt="Comfortable hotel room with two queen beds" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOeCviYCqWJ0DLzXViBKU0hw9rpPT5qCYUmNjZsr5X13keNc_AvrA5M6C-UHHXc8Fq7b6-XKkKuxGDCuQ3Ll6-EjZqeXhaiPxxsBdM1076jDt5HX43nA58HgNNkeX6PFzE9ZppCOVnbK5VgkRFxthrzI24_-M75PgkGWo7Fi-VF_jycyBeZCT1FavG0dTCahuispdyf5wuvUzevaAaJnmtojY9FNuR5Hmn2esb-OgUcYhCijfvRGM4IedkXYEbxkTvZFuF9MsgI1WO");'></div>
+<div class="flex flex-[2_2_0px] flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-sm font-normal leading-normal text-primary">Most Popular</p>
+<p class="text-xl font-bold leading-tight text-[#1A1A1A] dark:text-white">Deluxe Queen Room</p>
+<p class="text-sm font-normal leading-normal text-[#4A4A4A] dark:text-[#bab29c]">An elegant room featuring two queen beds and modern amenities, ideal for families or colleagues.</p>
+<div class="flex items-center gap-4 mt-2 text-[#4A4A4A] dark:text-[#bab29c]">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">aspect_ratio</span><span class="text-xs">450 sq ft</span></div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">bed</span><span class="text-xs">2 Queen Beds</span></div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">group</span><span class="text-xs">Max 4</span></div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-4 mt-auto">
+<p class="text-lg font-bold text-[#1A1A1A] dark:text-white">$320 <span class="text-sm font-normal text-[#888888] dark:text-[#bab29c]">/ night</span></p>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-gray-200 dark:bg-[#393528] text-[#1A1A1A] dark:text-white text-sm font-bold leading-normal">
+<span class="truncate">Select Room</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white dark:bg-[#1C1A16] p-6 rounded-lg border border-gray-200 dark:border-[#393528] flex flex-col sm:flex-row items-stretch justify-between gap-6">
+<div class="w-full sm:w-1/3 bg-center bg-no-repeat aspect-[4/3] sm:aspect-auto bg-cover rounded-lg" data-alt="Luxurious ambassador suite with a spacious living area" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoorJbJJFtEXkAc-kMhvZCKVMdGAOLoNC1s-ZKoLcBNoCl6n2GjITlznHF8xz14R80DCHJJurvwCc6vkC2hq_z1MFCnNDnDnlLk4CFolBKKYcm_6-0jMTQzHudmzcd70xdtkRkfV1j3vuEzr6u-wSZw854hhn8rHh3TCdNAW4NeGbaVTNsmsJsV_q0tOHk7nkK3H5W7UAifY2XlGELpnMJ36H5acnLGzYve36jE8d0SdBn0xIW0bLVuMIod4u6-U-_NnNAOib1HA-g");'></div>
+<div class="flex flex-[2_2_0px] flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-sm font-normal leading-normal text-primary">Premium</p>
+<p class="text-xl font-bold leading-tight text-[#1A1A1A] dark:text-white">Ambassador Suite</p>
+<p class="text-sm font-normal leading-normal text-[#4A4A4A] dark:text-[#bab29c]">The pinnacle of luxury with a separate living area, panoramic views, and premium amenities.</p>
+<div class="flex items-center gap-4 mt-2 text-[#4A4A4A] dark:text-[#bab29c]">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">aspect_ratio</span><span class="text-xs">950 sq ft</span></div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">king_bed</span><span class="text-xs">1 King Bed</span></div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-lg">group</span><span class="text-xs">Max 4</span></div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-4 mt-auto">
+<p class="text-lg font-bold text-[#1A1A1A] dark:text-white">$890 <span class="text-sm font-normal text-[#888888] dark:text-[#bab29c]">/ night</span></p>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-gray-200 dark:bg-[#393528] text-[#1A1A1A] dark:text-white text-sm font-bold leading-normal">
+<span class="truncate">Select Room</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Booking Widget -->
+<aside class="lg:col-span-1">
+<div class="sticky top-28 flex flex-col gap-6">
+<div class="bg-white dark:bg-[#1C1A16] p-6 rounded-lg border border-gray-200 dark:border-[#393528] space-y-5">
+<div class="space-y-2">
+<label class="text-sm font-medium text-[#4A4A4A] dark:text-[#bab29c]" for="date-range">Check-in / Check-out</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#888888]">calendar_month</span>
+<input class="w-full h-11 rounded-lg border border-gray-300 dark:border-[#4A4A4A] bg-transparent pl-10 pr-4 text-sm dark:text-white placeholder:text-[#888888] focus:border-primary focus:ring-primary" id="date-range" placeholder="Select your dates" type="text" value="Oct 24, 2024 — Oct 28, 2024"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-sm font-medium text-[#4A4A4A] dark:text-[#bab29c]" for="adults">Adults</label>
+<select class="w-full h-11 rounded-lg border border-gray-300 dark:border-[#4A4A4A] bg-transparent pl-3 pr-8 text-sm dark:text-white focus:border-primary focus:ring-primary" id="adults">
+<option>1</option>
+<option selected="">2</option>
+<option>3</option>
+<option>4</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-[#4A4A4A] dark:text-[#bab29c]" for="children">Children</label>
+<select class="w-full h-11 rounded-lg border border-gray-300 dark:border-[#4A4A4A] bg-transparent pl-3 pr-8 text-sm dark:text-white focus:border-primary focus:ring-primary" id="children">
+<option selected="">0</option>
+<option>1</option>
+<option>2</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-[#4A4A4A] dark:text-[#bab29c]" for="promo-code">Promotional Code</label>
+<input class="w-full h-11 rounded-lg border border-gray-300 dark:border-[#4A4A4A] bg-transparent px-4 text-sm dark:text-white placeholder:text-[#888888] focus:border-primary focus:ring-primary" id="promo-code" placeholder="Enter code" type="text"/>
+</div>
+<button class="w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-4 bg-gray-800 dark:bg-gray-200 text-white dark:text-[#1A1A1A] text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Update Search</span>
+</button>
+</div>
+<div class="bg-white dark:bg-[#1C1A16] p-6 rounded-lg border border-gray-200 dark:border-[#393528] space-y-4">
+<h3 class="text-lg font-bold text-[#1A1A1A] dark:text-white">Booking Summary</h3>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<p class="text-sm text-[#4A4A4A] dark:text-[#bab29c]">1x Deluxe Queen Room (4 nights)</p>
+<p class="text-sm font-medium text-[#1A1A1A] dark:text-white">$1,280.00</p>
+</div>
+<div class="flex justify-between items-center">
+<p class="text-sm text-[#4A4A4A] dark:text-[#bab29c]">Taxes &amp; Fees</p>
+<p class="text-sm font-medium text-[#1A1A1A] dark:text-white">$153.60</p>
+</div>
+</div>
+<div class="border-t border-gray-200 dark:border-[#393528] my-4"></div>
+<div class="flex justify-between items-baseline">
+<p class="text-base font-bold text-[#1A1A1A] dark:text-white">Subtotal</p>
+<p class="text-2xl font-bold text-[#1A1A1A] dark:text-white">$1,433.60</p>
+</div>
+<a href="upselling_options_for_booking.html">
+<button class="w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Continue to Guest Details</span>
+</button>
+</a>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-[#1C1A16] border-t border-gray-200 dark:border-[#393528] mt-auto">
+<div class="container mx-auto px-4 py-6 text-center text-sm text-[#888888] dark:text-[#bab29c]">
+<div class="flex justify-center gap-6">
+<a class="hover:text-primary" href="#">Contact</a>
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+</div>
+<p class="mt-4">© 2024 Park Avenues Hotel. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>

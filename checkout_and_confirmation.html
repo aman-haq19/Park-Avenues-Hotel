@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Secure Checkout &amp; Confirmation - Park Avenues Hotel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f2b90d",
+            "background-light": "#f8f8f5",
+            "background-dark": "#181611",
+            "foreground-dark": "#27241b",
+            "border-dark": "#393528",
+            "text-dark-primary": "#ffffff",
+            "text-dark-secondary": "#bab29c",
+            "text-dark-tertiary": "#8a816c",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-dark-primary antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-center border-b border-solid border-border-dark bg-background-dark/80 px-4 py-3 backdrop-blur-sm sm:px-8 md:px-10">
+<div class="flex w-full max-w-7xl items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<a href="homepage.html">
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-text-dark-primary">Park Avenues Hotel</h2>
+</a>
+</div>
+<div class="hidden items-center gap-9 md:flex">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="room_selection_and_booking.html">Rooms &amp; Suites</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="dining_and_leisure_options.html">Dining &amp; Leisure</a>
+<a class="text-sm font-medium leading-normal text-primary" href="meetings_and_events_details.html">Meetings &amp; Events</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="dining_and_leisure_options.html">Spa</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Offers</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Location</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-4 py-2 text-sm font-bold leading-normal tracking-[0.015em] text-[#181611] transition-opacity hover:opacity-90 sm:flex">
+<span class="truncate">Sign In</span>
+</button>
+<div class="aspect-square size-10 rounded-full bg-cover bg-center bg-no-repeat" data-alt="User avatar placeholder image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIMa8T1el75H5tbVWqwbhxRSlS3r2tDg0A8vr0qroPA3zUJ4aS9toLmkrHfwDrLoucb8xoxRL8xFtxpniFDBTVbG1-TwNtLjIgNljjoVu-l7KTgRLvJszh7IGylF08DusPUCV6h3z7W0dTU4zILGg-0tn92KUSCggDQOsTTi4Dlm7Lfq76EspKU2UG0olZdWcSYg0jIxEEo1qqzcWQ1dIr0-kGZHJDA_37RhO28YRTjgz0mlVkU6RLF9xaqE5sfjUeb1kvNbSANkqY");'></div>
+</div>
+</div>
+</header>
+<main class="flex w-full flex-1 justify-center px-4 py-8 sm:px-8 md:px-10 md:py-16">
+<div class="flex w-full max-w-7xl flex-col gap-8">
+<!-- Breadcrumbs & Page Heading -->
+<div class="flex flex-col gap-6">
+<div class="flex flex-wrap items-center gap-2">
+<a class="text-sm font-medium leading-normal text-text-dark-secondary" href="upselling_options_for_booking.html">Guest Details</a>
+<span class="text-sm font-medium leading-normal text-text-dark-secondary">/</span>
+<a class="text-sm font-medium leading-normal text-text-dark-secondary" href="room_selection_and_booking.html">Room Selection</a>
+<span class="text-sm font-medium leading-normal text-text-dark-secondary">/</span>
+<span class="text-sm font-medium leading-normal text-text-dark-primary">Payment &amp; Confirmation</span>
+</div>
+<div class="flex min-w-72 flex-col gap-2">
+<p class="text-4xl font-black leading-tight tracking-[-0.033em] text-text-dark-primary">Secure Checkout</p>
+<p class="text-base font-normal leading-normal text-text-dark-secondary">Complete your booking in one final, secure step.</p>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
+<!-- Left Column: Form -->
+<div class="flex flex-col gap-10 lg:col-span-2">
+<!-- Guest Information Section -->
+<div class="flex flex-col gap-6 rounded-xl border border-border-dark bg-foreground-dark p-6 sm:p-8">
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em] text-text-dark-primary">Guest Information</h2>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+<label class="flex flex-col gap-2">
+<p class="text-sm font-medium leading-normal text-text-dark-primary">Full Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-border-dark bg-background-dark p-3 text-base font-normal leading-normal text-text-dark-primary placeholder:text-text-dark-secondary focus:border-primary focus:outline-0 focus:ring-1 focus:ring-primary" placeholder="Enter your full name" value="John Appleseed"/>
+</label>
+<label class="flex flex-col gap-2">
+<p class="text-sm font-medium leading-normal text-text-dark-primary">Email Address</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-border-dark bg-background-dark p-3 text-base font-normal leading-normal text-text-dark-primary placeholder:text-text-dark-secondary focus:border-primary focus:outline-0 focus:ring-1 focus:ring-primary" placeholder="name@example.com" type="email" value="john.appleseed@corp.com"/>
+</label>
+<label class="flex flex-col gap-2 sm:col-span-2">
+<p class="text-sm font-medium leading-normal text-text-dark-primary">Phone Number</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-border-dark bg-background-dark p-3 text-base font-normal leading-normal text-text-dark-primary placeholder:text-text-dark-secondary focus:border-primary focus:outline-0 focus:ring-1 focus:ring-primary" placeholder="+1 (555) 000-0000" type="tel" value="+1 (555) 123-4567"/>
+</label>
+<label class="flex flex-col gap-2 sm:col-span-2">
+<p class="text-sm font-medium leading-normal text-text-dark-primary">Special Requests (Optional)</p>
+<textarea class="form-textarea flex min-h-24 w-full resize-y overflow-hidden rounded-lg border border-border-dark bg-background-dark p-3 text-base font-normal leading-normal text-text-dark-primary placeholder:text-text-dark-secondary focus:border-primary focus:outline-0 focus:ring-1 focus:ring-primary" placeholder="e.g., extra pillows, high floor"></textarea>
+</label>
+</div>
+</div>
+<!-- Payment Details Section -->
+<div class="flex flex-col gap-6 rounded-xl border border-border-dark bg-foreground-dark p-6 sm:p-8">
+<div class="flex flex-wrap items-center justify-between gap-4">
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em] text-text-dark-primary">Payment Details</h2>
+<div class="flex items-center gap-2 text-sm text-text-dark-secondary">
+<span class="material-symbols-outlined text-base">lock</span>
+<span>SSL Secure Connection</span>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<label class="flex flex-col gap-2">
+<p class="text-sm font-medium leading-normal text-text-dark-primary">Card Number</p>
+<div class="relative">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-border-dark bg-background-dark p-3 pl-10 text-base font-normal leading-normal text-text-dark-primary placeholder:text-text-dark-secondary focus:border-primary focus:outline-0 focus:ring-1 focus:ring-primary" placeholder="0000 0000 0000 0000"/>
+<span class="material-symbols-outlined pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-text-dark-secondary">credit_card</span>
+</div>
+</label>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+<label class="flex flex-col gap-2">
+<p class="text-sm font-medium leading-normal text-text-dark-primary">Expiration Date</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-border-dark bg-background-dark p-3 text-base font-normal leading-normal text-text-dark-primary placeholder:text-text-dark-secondary focus:border-primary focus:outline-0 focus:ring-1 focus:ring-primary" placeholder="MM / YY"/>
+</label>
+<label class="flex flex-col gap-2">
+<p class="text-sm font-medium leading-normal text-text-dark-primary">CVV</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-border-dark bg-background-dark p-3 text-base font-normal leading-normal text-text-dark-primary placeholder:text-text-dark-secondary focus:border-primary focus:outline-0 focus:ring-1 focus:ring-primary" placeholder="123"/>
+</label>
+</div>
+<div class="flex items-center justify-end gap-3 pt-4">
+<img alt="Visa Logo" class="h-6" data-alt="Visa payment provider logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_2LNDimUZXUTc1r476ME7y-Vh3ZtQcFb3DmLRPuq89HdJJvZ9-DuN6YfVL9NCQ07bN_fZdhoTl5r55tQ1dH22HolYa_Kd1A3rgzzv6ETzI08hx5W61lT60ZT7D5AuVNTsESC-iUhRclUfp7HvO0O_P3SsdBdJ4LS74-wGNStpywnHbfgzskszkBFlIV82WJiS7sGVNPtTWdNuMYj_KtahbrKpuMLrjtNLa8pKF5V1nN5_Cz3wZJyA4siKefg30R4ju820INk1raM2"/>
+<img alt="Mastercard Logo" class="h-6" data-alt="Mastercard payment provider logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1_uprJcb1oNOSe0ktcFVurVoykORKGImMyMaHwMspEI0tfByIS2x-pefj9F2dFYS_woG1NEjodmcd4gbpURFaaa4LAAFwyHx6QVTwOT08GaK6rsGZ7-DIMPFG7lCGVf7o1EEbChcYDaGjggrCr-KvIabRHZymgVbPIzpZGUQz1wU4ts-2mIh5nDLsJwBajBiel_2TR1XF8Tri4ICmld6z6LF41rHIMrmoGtCcnPGF0F7wsUn192BtA1lJf4VSEzSbSbs9eVfrvXH_"/>
+<img alt="American Express Logo" class="h-6" data-alt="American Express payment provider logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEc1Cjl0S6o1cP8uvLlXtVWKv213fjxwFJEa_qWtF6Il4xYGA9S0zGLvw0MQaQSWJ44Ja6dbMr0gJ_YqOSINqMK1p-HFDj8cYT2zcUD6dSIzdQtbD_fw13u2P7LqDX1O7EXguJ-cE-HRJ9nSRxaVARYRr7ucoUtmQU8h4x6xpMmDPqNapNX5WU26eLvb2pOx2U_JZQubWUVqMA7R91CqTAtgk6iAaEWnPv-sipPzT6VwO4e6D_tJBfWXYFTTNaM4yUUk8hcj1LMPRX"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Booking Summary -->
+<aside class="lg:col-span-1">
+<div class="sticky top-28 flex flex-col gap-6 rounded-xl border border-border-dark bg-foreground-dark p-6 sm:p-8">
+<h3 class="border-b border-border-dark pb-4 text-xl font-bold leading-tight tracking-[-0.015em] text-text-dark-primary">Booking Summary</h3>
+<div class="flex flex-col gap-4">
+<div class="aspect-video w-full rounded-lg bg-cover bg-center" data-alt="Interior of the Executive King Suite with a large bed and city view." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZ-eeL2isIcyuw967wcXI4F_cceY07CreOMD3vtSMn5dfnoETbF-_FKoLr1MjqxWiVNWwWeTRWM25B-YNGuxmGWJydPk4FsPkBkGAAW4Q90UoM3NbThQ8UY_iASytvOpJML-vQtCap3hc_DNM4MYWwjKz4ah6AKUnXmJNfeAtpNg2ZC0VI-wggnJN6ESougB9oO_RIcBMsoDKtv8Dy48_nDSprAZNDXhdAyMNeIhbX82XI1G_X9qVMNUXVVekBp6tg5J0XRil7K_2f')"></div>
+<div class="flex flex-col">
+<p class="text-lg font-bold text-text-dark-primary">Executive King Suite</p>
+<p class="text-sm text-text-dark-secondary">Park Avenues Hotel, New York</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 border-b border-border-dark pb-4">
+<div class="flex justify-between text-sm">
+<p class="font-medium text-text-dark-secondary">Check-in</p>
+<p class="font-semibold text-text-dark-primary">Oct 28, 2024</p>
+</div>
+<div class="flex justify-between text-sm">
+<p class="font-medium text-text-dark-secondary">Check-out</p>
+<p class="font-semibold text-text-dark-primary">Nov 01, 2024</p>
+</div>
+<div class="flex justify-between text-sm">
+<p class="font-medium text-text-dark-secondary">Guests</p>
+<p class="font-semibold text-text-dark-primary">2 Adults, 1 Room</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 border-b border-border-dark pb-4 text-sm">
+<div class="flex justify-between">
+<p class="text-text-dark-secondary">4 nights x $450.00</p>
+<p class="text-text-dark-primary">$1,800.00</p>
+</div>
+<div class="flex justify-between">
+<p class="text-text-dark-secondary">Taxes &amp; Fees</p>
+<p class="text-text-dark-primary">$252.00</p>
+</div>
+<div class="flex justify-between">
+<p class="text-text-dark-secondary">Resort Fee</p>
+<p class="text-text-dark-primary">$80.00</p>
+</div>
+</div>
+<div class="flex items-baseline justify-between">
+<p class="text-lg font-bold text-text-dark-primary">Total</p>
+<p class="text-2xl font-black text-primary">$2,132.00</p>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary py-3 text-base font-bold leading-normal tracking-wide text-[#181611] transition-opacity hover:opacity-90">
+<span class="truncate">Confirm &amp; Pay</span>
+</button>
+</div>
+</aside>
+</div>
+<!-- Confirmation Module (Hidden by default, shown after payment) -->
+<!-- <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
+            <div class="flex flex-col items-center justify-center gap-8 rounded-xl border border-border-dark bg-foreground-dark p-8 text-center lg:col-span-2">
+                <div class="flex flex-col items-center gap-4">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/20 text-primary">
+                        <span class="material-symbols-outlined text-4xl">check_circle</span>
+                    </div>
+                    <h2 class="text-3xl font-black tracking-tighter text-text-dark-primary">Thank You, John! Your Booking is Confirmed.</h2>
+                    <p class="max-w-md text-text-dark-secondary">A confirmation email with all your booking details has been sent to john.appleseed@corp.com. We look forward to welcoming you.</p>
+                </div>
+                <div class="flex flex-col items-center gap-3 rounded-lg bg-background-dark px-6 py-4">
+                    <p class="text-sm text-text-dark-secondary">Booking Reference Number</p>
+                    <p class="font-mono text-xl font-bold text-primary">PAH-8C4F6B2A</p>
+                </div>
+                <div class="mt-4 flex flex-wrap justify-center gap-4">
+                    <button class="flex min-w-[140px] items-center justify-center gap-2 rounded-lg border border-border-dark bg-background-dark px-4 py-2 text-sm font-medium text-text-dark-primary transition-colors hover:bg-border-dark">
+                        <span class="material-symbols-outlined text-lg">print</span>
+                        Print Reservation
+                    </button>
+                    <button class="flex min-w-[140px] items-center justify-center gap-2 rounded-lg border border-border-dark bg-background-dark px-4 py-2 text-sm font-medium text-text-dark-primary transition-colors hover:bg-border-dark">
+                        <span class="material-symbols-outlined text-lg">calendar_add_on</span>
+                        Add to Calendar
+                    </button>
+                    <button class="flex min-w-[140px] items-center justify-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-[#181611] transition-opacity hover:opacity-90">
+                        <span class="material-symbols-outlined text-lg">settings</span>
+                        Manage Booking
+                    </button>
+                </div>
+            </div>
+            <aside class="lg:col-span-1">
+              <div class="sticky top-28 flex flex-col gap-6 rounded-xl border border-border-dark bg-foreground-dark p-6 sm:p-8">
+                 Booking summary remains here
+              </div>
+            </aside>
+        </div> -->
+</div>
+</main>
+</div>
+</body></html>
